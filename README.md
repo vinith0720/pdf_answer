@@ -22,7 +22,8 @@ You can install the required libraries by running the following command:
   ```bash
     pip install PyPDF2 scikit-learn
   ```
-# How It Works
+How It Works
+
 ##Upload the PDF file
 When prompted, select the PDF file you want to upload using a file dialog.
 

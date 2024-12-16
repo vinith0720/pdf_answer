@@ -24,7 +24,7 @@ You can install the required libraries by running the following command:
   ```
 How It Works
 
-##Upload the PDF file
+## Upload the PDF file
 When prompted, select the PDF file you want to upload using a file dialog.
 
 ## Ask a question
@@ -33,20 +33,20 @@ Enter your query related to the content of the PDF. The chatbot will return the 
 ## Repeat the process
 The chatbot will keep running until you choose to exit.
 
-## Code Walkthrough
-Functions
-extract_text_from_pdf(pdf_path)
 
-This function extracts text from the given PDF file.
-get_answer_from_pdf(question)
+### Functions
 
-This function processes the user’s question and the text extracted from the PDF to find the most relevant answer.
-main()
+1. **`extract_text_from_pdf(pdf_path)`**  
+   This function extracts text from the given PDF file.
 
-This function handles the interaction with the user.
-tkinter
+2. **`get_answer_from_pdf(question)`**  
+   This function processes the user’s question and the text extracted from the PDF to find the most relevant answer.
 
-The tkinter library is used for creating a file dialog for PDF selection.
+3. **`main()`**  
+   This function handles the interaction with the user.
+
+
+# The tkinter library is used for creating a file dialog for PDF selection.
 Example Usage
 ```bash
 $ python pdf_qa_chatbot.py

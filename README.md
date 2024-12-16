@@ -56,17 +56,19 @@ Enter the query: "wecrm contact detail"
 The most relevant text from the PDF will be shown here.
 ```
 ## Script Explanation
-User Input for PDF
 
-When prompted with Press (y/n) to insert a PDF:, the user can select a PDF file using a file dialog.
-## Text Extraction
+1. **User Input for PDF**  
+   When prompted with `Press (y/n) to insert a PDF:`, the user can select a PDF file using a file dialog.
 
-The selected PDF file is processed, and the text is extracted page by page.
-## Querying
+2. **Text Extraction**  
+   The selected PDF file is processed, and the text is extracted page by page.
 
-After extracting the PDF text, the script allows the user to enter a query.
-Continuous Interaction
-The chatbot remains interactive, accepting multiple queries.
+3. **Querying**  
+   After extracting the PDF text, the script allows the user to enter a query.
+
+4. **Continuous Interaction**  
+   The chatbot remains interactive, accepting multiple queries.
+
 ## License
 ```
 This project is licensed under the MIT License. See the LICENSE file for details.

@@ -19,5 +19,54 @@ This project implements a simple chatbot that answers questions based on the con
 
 You can install the required libraries by running the following command:
 
+  ```bash
+    pip install PyPDF2 scikit-learn
+  ```
+# How It Works
+##Upload the PDF file
+When prompted, select the PDF file you want to upload using a file dialog.
+
+##Ask a question
+Enter your query related to the content of the PDF. The chatbot will return the most relevant section of the document.
+
+##Repeat the process
+The chatbot will keep running until you choose to exit.
+
+##Code Walkthrough
+Functions
+extract_text_from_pdf(pdf_path)
+
+This function extracts text from the given PDF file.
+get_answer_from_pdf(question)
+
+This function processes the user’s question and the text extracted from the PDF to find the most relevant answer.
+main()
+
+This function handles the interaction with the user.
+tkinter
+
+The tkinter library is used for creating a file dialog for PDF selection.
+Example Usage
 ```bash
-pip install PyPDF2 scikit-learn
+Copy code
+$ python pdf_qa_chatbot.py
+Welcome to the PDF Question Answering Chatbot...
+Press (y/n) to insert a PDF: y
+Enter the query: "wecrm contact detail"
+The most relevant text from the PDF will be shown here.
+```
+Script Explanation
+User Input for PDF
+
+When prompted with Press (y/n) to insert a PDF:, the user can select a PDF file using a file dialog.
+Text Extraction
+
+The selected PDF file is processed, and the text is extracted page by page.
+Querying
+
+After extracting the PDF text, the script allows the user to enter a query.
+Continuous Interaction
+
+The chatbot remains interactive, accepting multiple queries.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
